@@ -1,0 +1,151 @@
+body {
+  background-image: url(pexels-dom-j-310452.jpg);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.start-screen {
+  position: relative; 
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.start-screen h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.start-screen p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.start-screen button {
+  position: absolute; /* Butonun konumunu mutlak olarak ayarla */
+  top: 60%; /* Üstten uzaklık */
+  left: 50%; /* Soldan uzaklık */
+  transform: translate(-50%, 120%); /* Butonu merkeze hizala */
+  padding: 50px 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url('/public/gif.gif');
+  background-size: cover;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.start-screen button:hover {
+  background-color: #ff4fbe61;
+}
+
+.score-section {
+  text-align: center;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.score-section h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.score-section p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.result-section {
+  margin-top: 20px;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.result-section p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.answer-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.answer-result {
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.answer-result p {
+  margin: 5px 0;
+}
+
+.question-section {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.question-text {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.question-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.answer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 20px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f647ff;
+  color: rgb(252, 252, 252);
+  border: none;
+  border-radius: 5px;
+  top: 50px;
+  right: 50px;
+}
+
+button:hover {
+  background-color: #ff4fbe61;
+}
